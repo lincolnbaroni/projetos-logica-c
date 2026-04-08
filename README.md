@@ -17,7 +17,7 @@ Aqui estão os principais projetos desenvolvidos, organizados por nível de comp
 
 ### 🔴 Nível Avançado (Structs, Ponteiros e Funções)
 * **[04. Gestão de Estoque E-commerce](./04_ecommerce_estoque):** Sistema focado em `Structs` e modularização. Utiliza funções independentes para exibir e ordenar produtos pelo preço e quantidade.
-* **[05. Gestão de Clínica Médica (Triagem)](./05_gestao_clinica_medica):** O projeto mais completo. Um CRUD in-memory utilizando funções, passagem de vetores por referência e **Ponteiros** para alterar o status de atendimento dos pacientes. Conta com sistema de fila de prioridade (ordenação por idade).
+* **[05. Gestão de Clínica Médica (Triagem)](./06_getao_clinica_medica):** O projeto mais completo. Um CRUD in-memory utilizando funções, passagem de vetores por referência e **Ponteiros** para alterar o status de atendimento dos pacientes. Conta com sistema de fila de prioridade (ordenação por idade).
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 - Linguagem C
