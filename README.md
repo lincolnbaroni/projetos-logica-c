@@ -4,6 +4,10 @@ Bem-vindo ao meu repositório de fundamentos! Este espaço é dedicado a documen
 
 Aqui, construí sistemas desde o nível básico (scripts imperativos) até o nível intermediário, aplicando conceitos de modularização, gerenciamento de estado em memória e ponteiros.
 
+## Teorias e Anotações
+* [Anotações e Teorias](./00_Teoria_e_anotação): Anotações teórica dos meus estudos e exercícios elaborados.
+- ---
+
 ## 🚀 Trilha de Projetos (Do Básico ao Avançado)
 
 Aqui estão os principais projetos desenvolvidos, organizados por nível de complexidade:
