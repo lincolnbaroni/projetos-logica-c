@@ -12,14 +12,14 @@ Aqui, construí sistemas desde o nível básico (scripts imperativos) até o ní
 
 Aqui estão os principais projetos desenvolvidos, organizados por nível de complexidade:
 
-### 🟢 Nível Iniciante (Fundamentos e Laços)
+### Fundamentos e Laços
 * **[01. Sistema de Estacionamento](./01_sistema_estacionamento):** Controle de entrada e saída de veículos com validação de caracteres (Placas).
 * **[02. Tabela de Campeonato de Futebol](./02_campeonato_futebol):** Sistema que calcula pontuações (Vitórias/Empates) e ordena os times do campeão ao último colocado usando o algoritmo *Bubble Sort* construído do zero.
 
-### 🟡 Nível Intermediário (Estado e Busca)
+### Estado e Busca
 * **[03. Gestão de Hotelaria](./03_hotel_interativo):** Sistema com menu interativo infinito (`do-while` + `switch/case`). Implementação de check-in e check-out, alterando o status dos quartos em tempo real na memória e realizando busca sequencial.
 
-### 🔴 Nível Avançado (Structs, Ponteiros e Funções)
+### Structs, Ponteiros e Funções
 * **[04. Gestão de Estoque E-commerce](./04_ecommerce_estoque):** Sistema focado em `Structs` e modularização. Utiliza funções independentes para exibir e ordenar produtos pelo preço e quantidade.
 * **[05. Gestão de Clínica Médica (Triagem)](./06_getao_clinica_medica):** O projeto mais completo. Um CRUD in-memory utilizando funções, passagem de vetores por referência e **Ponteiros** para alterar o status de atendimento dos pacientes. Conta com sistema de fila de prioridade (ordenação por idade).
 
