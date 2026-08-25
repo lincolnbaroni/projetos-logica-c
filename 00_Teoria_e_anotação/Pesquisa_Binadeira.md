@@ -275,7 +275,77 @@ int main() {
     } else {
         printf("[NEGADO] Automovel nao encontrado\n");
     }
+```
+---
+
+## 🟢 Desafio 1: A Guilda de Aventureiros (Filtros e Acumuladores).
+
+**O Objetivo:** Praticar a varredura para encontrar não só um item especifico, mas da busca de vários itens buscando o resultado matemático final da variável acumuladora.
+
+### 💻 Código
+
+```c
+
+#include <stdio.h>
+#define total 3
+
+typedef struct {
+    int idMissao;
+    char descric[50];
+    float recompensa;
+    int status;
+} Missao;
+
+void percorrerStatus(Missao lista[], int tamanho) {
+    for(int i = 0; i < tamanho; i++) {
+        if(lista[i].status == 0) {
+          printf("Missao: %d\n", lista[i].idMissao);
+          printf("Descricao: %s\n", lista[i].descric);
+          printf("Recompensa: %.2f\n", lista[i].recompensa);
+          printf("Status: %d\n", lista[i].status);
+          printf("----------------------------------------\n");
+        }
+    }
+}
+
+float varrerVetorRecom(Missao lista[], int tamanho) {
+    float acumuladorRecom = 0;
     
+    for(int i = 0; i < tamanho; i++) {
+        if(lista[i].status == 1) {
+            acumuladorRecom += lista[i].recompensa;
+        }
+    }
+    return acumuladorRecom;
+}
+
+int main() {
+    Missao miss[total];
+    
+    printf("CADASTRO DAS MISSOES\n");
+    for(int i = 0; i < total; i++) {
+        printf("ID Missao: ");
+        scanf("%d", &miss[i].idMissao);
+        
+        printf("Descricao: ");
+        scanf(" %[^\n]", miss[i].descric);
+        
+        printf("Recompensa: ");
+        scanf("%f", &miss[i].recompensa);
+        
+        printf("Status: ");
+        scanf("%d",&miss[i].status);
+        printf("----------------------------------------\n");
+    }
+    
+    printf("MISSOA QUE NAO OBTEVE SUCESSO\n");
+    percorrerStatus(miss, total);
+    
+    float resulMissSucesso = varrerVetorRecom(miss, total);
+    
+    printf("TOTAL FINANCEIRO DAS MISSOES QUE OBTEVE SUCESSO\n");
+    printf("Total financeiro: %.2f", resulMissSucesso);
+
     return 0;
 }
 
